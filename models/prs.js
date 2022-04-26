@@ -34,7 +34,8 @@ module.exports = (sequelize, DataTypes) => {
     underscoredAll:true,
     underscored: true,
     createdAt:"create_at",
-    
+    updatedAt:"update_at"
+
   });
   return PRS;
 };

@@ -1,6 +1,6 @@
 {
   "development": {
-    "dialect":"mysql",
+    "dialect":"sqlite",
     "storage":"./dev.sqlite3"
   },
   "test": {
