@@ -3,11 +3,12 @@ const router = express.Router()
 const multer = require('multer')
 const multerConfig = require('./config/multer_config')
 const upload = multer(multerConfig.config).array(multerConfig.keyUpload, 3)
-
+const db =require('./models')
 
 //get
-router.get('/pr', (req, res) => {
-     res.send('get product')
+router.get('/pr', async (req, res) => {
+     const result =  await db.PRS.findAll();
+     res.json(result)
 })
 
 //upload
