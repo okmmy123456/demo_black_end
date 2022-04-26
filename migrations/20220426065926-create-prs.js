@@ -14,7 +14,7 @@ module.exports = {
       section: {
         type: Sequelize.STRING
       },
-      PRNO: {
+      prnonumber: {
         type: Sequelize.STRING
       },
       description: {
@@ -32,7 +32,7 @@ module.exports = {
       amount: {
         type: Sequelize.INTEGER
       },
-      Requied: {
+      requieddate: {
         type: Sequelize.DATE
       },
       supplier: {

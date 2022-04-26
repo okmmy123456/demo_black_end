@@ -22,7 +22,7 @@ const data = [
   {
     "Site": 0,
     "Section": 0,
-    "PRNO": 123456,
+    "prnonumber": 123456,
     "Description": " test 00",
     "Qty": 2,
     "Unit": 2,
@@ -36,7 +36,7 @@ const data = [
   {
     "Site": 0,
     "Section": 0,
-    "PRNO": 123456,
+    "prnonumber": 123456,
     "Description": " test 02",
     "Qty": 2,
     "Unit": 2,

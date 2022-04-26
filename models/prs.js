@@ -16,13 +16,13 @@ module.exports = (sequelize, DataTypes) => {
   PRS.init({
     site: DataTypes.STRING,
     section: DataTypes.STRING,
-    PRNO: DataTypes.STRING,
+    prnonumber: DataTypes.STRING,
     description: DataTypes.STRING,
     qty: DataTypes.INTEGER,
     unit: DataTypes.INTEGER,
     price: DataTypes.INTEGER,
     amount: DataTypes.INTEGER,
-    Requied: DataTypes.DATE,
+    requieddate: DataTypes.DATE,
     supplier: DataTypes.STRING,
     assetno: DataTypes.INTEGER,
     over1y: DataTypes.BOOLEAN,
@@ -33,8 +33,8 @@ module.exports = (sequelize, DataTypes) => {
     freezeTableName:true,
     underscoredAll:true,
     underscored: true,
-    createdAt:"create_at",
-    updatedAt:"update_at"
+    createdAt:"created_at",
+    updatedAt:"updated_at"
 
   });
   return PRS;
