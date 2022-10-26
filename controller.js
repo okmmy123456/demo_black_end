@@ -22,7 +22,7 @@ router.post('/pr/:id', (req, res) => {
 
 
      })
-     const filename = req.file ? req.file.fieldname : undefined
+     const filename = req.file ? req.file.filename : undefined
      // console.log(req.body)
      res.send('POST Product' + req.params.id + "," + filename)
 })
